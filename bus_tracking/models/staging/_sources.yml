@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: RAW_BUS_POSITIONS
+        description: "JSON cru da API OlhoVivo, gravado pelo ingestor Python"

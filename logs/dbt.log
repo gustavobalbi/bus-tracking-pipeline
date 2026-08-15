@@ -1,0 +1,194 @@
+[0m00:54:56.236457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915B56E270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029158ED0B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915DE539D0>]}
+
+
+============================== 00:54:56.240736 | 8afb075d-29bf-431b-8012-6b74fb532d93 ==============================
+[0m00:54:56.240736 [info ] [MainThread]: Running with dbt=1.12.2
+[0m00:54:56.241402 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\gugab\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init bus_tracking', 'log_path': 'logs'}
+[0m00:54:56.265275 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\gugab\.dbt
+[0m00:54:56.267996 [debug] [MainThread]: Starter project path: B:\PORTIFOLIO\bus-tracking-pipeline\.venv\Lib\site-packages\dbt\include\starter_project
+[0m00:54:56.290520 [info ] [MainThread]: Setting up your profile.
+[0m00:56:42.577757 [info ] [MainThread]: Profile bus_tracking written to C:\Users\gugab\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m00:56:42.580457 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m00:56:42.581118 [info ] [MainThread]: dbt version: 1.12.2
+[0m00:56:42.581492 [info ] [MainThread]: python version: 3.14.2
+[0m00:56:42.581827 [info ] [MainThread]: python path: B:\PORTIFOLIO\bus-tracking-pipeline\.venv\Scripts\python.exe
+[0m00:56:42.582216 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:56:42.636063 [info ] [MainThread]: Using profiles dir at C:\Users\gugab\.dbt
+[0m00:56:42.636619 [info ] [MainThread]: Using profiles.yml file at C:\Users\gugab\.dbt\profiles.yml
+[0m00:56:42.636980 [info ] [MainThread]: Using dbt_project.yml file at B:\PORTIFOLIO\bus-tracking-pipeline\bus_tracking\dbt_project.yml
+[0m00:56:42.637278 [info ] [MainThread]: adapter type: sqlserver
+[0m00:56:42.637861 [info ] [MainThread]: adapter version: 1.11.1
+[0m00:56:42.743873 [info ] [MainThread]: Configuration:
+[0m00:56:42.744494 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:56:42.744893 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:56:42.745328 [info ] [MainThread]: Required dependencies:
+[0m00:56:42.745721 [debug] [MainThread]: Executing "git --help"
+[0m00:56:42.801504 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:56:42.802524 [debug] [MainThread]: STDERR: "b''"
+[0m00:56:42.803022 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:56:42.803601 [info ] [MainThread]: Connection:
+[0m00:56:42.804260 [info ] [MainThread]:   driver: None
+[0m00:56:42.804780 [info ] [MainThread]:   server: gustavobalbi-prod.database.windows.net
+[0m00:56:42.805510 [info ] [MainThread]:   port: 1433
+[0m00:56:42.806588 [info ] [MainThread]:   database: olho_vivo
+[0m00:56:42.807402 [info ] [MainThread]:   schema: None
+[0m00:56:42.807851 [info ] [MainThread]:   UID: gustavobalbi
+[0m00:56:42.808350 [info ] [MainThread]:   authentication: sql
+[0m00:56:42.808913 [info ] [MainThread]:   windows_login: False
+[0m00:56:42.809366 [info ] [MainThread]:   retries: 3
+[0m00:56:42.809868 [info ] [MainThread]:   login_timeout: 0
+[0m00:56:42.810343 [info ] [MainThread]:   query_timeout: 0
+[0m00:56:42.810968 [info ] [MainThread]:   trace_flag: False
+[0m00:56:42.812013 [info ] [MainThread]:   encrypt: True
+[0m00:56:42.815225 [info ] [MainThread]:   trust_cert: False
+[0m00:56:42.815911 [info ] [MainThread]:   backend: pyodbc
+[0m00:56:42.816328 [info ] [MainThread]:   xact_abort: True
+[0m00:56:42.817108 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m00:56:43.262469 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m00:56:43.263545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '8afb075d-29bf-431b-8012-6b74fb532d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915E28D940>]}
+[0m00:56:43.263992 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m00:56:43.264584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '8afb075d-29bf-431b-8012-6b74fb532d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915E4878A0>]}
+[0m00:56:43.264970 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m00:56:43.265224 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m00:56:43.265445 [debug] [MainThread]: On debug: select 1 as id
+[0m00:56:43.265684 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:56:43.265975 [debug] [MainThread]: sqlserver adapter: SQL execution raised DbtRuntimeError: Runtime Error
+  The `schema` profile field is required for SQL Server connections.
+[0m00:56:43.266210 [debug] [MainThread]: sqlserver adapter: Error running SQL: select 1 as id
+[0m00:56:43.266418 [debug] [MainThread]: sqlserver adapter: Rolling back transaction.
+[0m00:56:43.266693 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m00:56:43.267073 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:56:43.267441 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  The `schema` profile field is required for SQL Server connections.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m00:56:43.267890 [info ] [MainThread]: Your new dbt project "bus_tracking" was created!
+Initialized new project in B:\PORTIFOLIO\bus-tracking-pipeline\bus_tracking\bus_tracking
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:56:43.268323 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m00:56:43.269551 [debug] [MainThread]: Command `dbt init` succeeded at 00:56:43.269434 after 107.21 seconds
+[0m00:56:43.269858 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:56:43.270599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915E287A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915E287850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002915E47F2F0>]}
+[0m00:56:43.271151 [debug] [MainThread]: Flushing usage events
+[0m00:56:44.117271 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:59:06.940181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA58AE270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA3200CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA81939D0>]}
+
+
+============================== 00:59:06.944696 | 252d22d0-4a3d-4916-839e-9a6c963d8ac5 ==============================
+[0m00:59:06.944696 [info ] [MainThread]: Running with dbt=1.12.2
+[0m00:59:06.945298 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\gugab\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m00:59:06.968729 [info ] [MainThread]: dbt version: 1.12.2
+[0m00:59:06.969207 [info ] [MainThread]: python version: 3.14.2
+[0m00:59:06.969566 [info ] [MainThread]: python path: B:\PORTIFOLIO\bus-tracking-pipeline\.venv\Scripts\python.exe
+[0m00:59:06.969901 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m00:59:06.978377 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'AZURE_SQL_USER'
+[0m00:59:06.979531 [debug] [MainThread]: Command `dbt debug` failed at 00:59:06.979408 after 0.24 seconds
+[0m00:59:06.979886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA8257E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA82C4710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CFA824E360>]}
+[0m00:59:06.980261 [debug] [MainThread]: Flushing usage events
+[0m00:59:07.828112 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:00:06.494746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ECD842270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ECB1A0CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ED01239D0>]}
+
+
+============================== 01:00:06.499022 | 9af98f4c-4d4c-42e4-af75-375f372e2769 ==============================
+[0m01:00:06.499022 [info ] [MainThread]: Running with dbt=1.12.2
+[0m01:00:06.499606 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\gugab\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m01:00:06.524839 [info ] [MainThread]: dbt version: 1.12.2
+[0m01:00:06.525347 [info ] [MainThread]: python version: 3.14.2
+[0m01:00:06.525728 [info ] [MainThread]: python path: B:\PORTIFOLIO\bus-tracking-pipeline\.venv\Scripts\python.exe
+[0m01:00:06.526140 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m01:00:06.712531 [info ] [MainThread]: Using profiles dir at C:\Users\gugab\.dbt
+[0m01:00:06.713194 [info ] [MainThread]: Using profiles.yml file at C:\Users\gugab\.dbt\profiles.yml
+[0m01:00:06.713544 [info ] [MainThread]: Using dbt_project.yml file at B:\PORTIFOLIO\bus-tracking-pipeline\dbt_project.yml
+[0m01:00:06.713905 [info ] [MainThread]: adapter type: sqlserver
+[0m01:00:06.714231 [info ] [MainThread]: adapter version: 1.11.1
+[0m01:00:06.714727 [info ] [MainThread]: Configuration:
+[0m01:00:06.715079 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:00:06.715408 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m01:00:06.715725 [info ] [MainThread]: Required dependencies:
+[0m01:00:06.716097 [debug] [MainThread]: Executing "git --help"
+[0m01:00:06.756511 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:00:06.757052 [debug] [MainThread]: STDERR: "b''"
+[0m01:00:06.757449 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:00:06.757870 [info ] [MainThread]: Connection:
+[0m01:00:06.758324 [info ] [MainThread]:   driver: None
+[0m01:00:06.758682 [info ] [MainThread]:   server: gustavobalbi-prod.database.windows.net
+[0m01:00:06.759048 [info ] [MainThread]:   port: 1433
+[0m01:00:06.759523 [info ] [MainThread]:   database: olho_vivo
+[0m01:00:06.759975 [info ] [MainThread]:   schema: silver
+[0m01:00:06.760445 [info ] [MainThread]:   UID: gustavobalbi
+[0m01:00:06.760841 [info ] [MainThread]:   authentication: sql
+[0m01:00:06.761178 [info ] [MainThread]:   windows_login: False
+[0m01:00:06.761468 [info ] [MainThread]:   retries: 3
+[0m01:00:06.761752 [info ] [MainThread]:   login_timeout: 0
+[0m01:00:06.762016 [info ] [MainThread]:   query_timeout: 0
+[0m01:00:06.762283 [info ] [MainThread]:   trace_flag: False
+[0m01:00:06.762551 [info ] [MainThread]:   encrypt: True
+[0m01:00:06.762815 [info ] [MainThread]:   trust_cert: False
+[0m01:00:06.763149 [info ] [MainThread]:   backend: pyodbc
+[0m01:00:06.763463 [info ] [MainThread]:   xact_abort: True
+[0m01:00:06.764280 [info ] [MainThread]: Registered adapter: sqlserver=1.11.1
+[0m01:00:07.178524 [warn ] [MainThread]: [[33mWARNING[0m]: When True, uses SQL Server-native string type mappings: STRING -> VARCHAR(MAX), NCHAR -> NCHAR(1), NVARCHAR -> NVARCHAR(4000). When False (default), preserves legacy mappings: STRING and NVARCHAR -> VARCHAR(8000), NCHAR -> CHAR(1). The new behaviour is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_native_string_types` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m01:00:07.179255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '9af98f4c-4d4c-42e4-af75-375f372e2769', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ED031D810>]}
+[0m01:00:07.179591 [warn ] [MainThread]: [[33mWARNING[0m]: When True, dbt transaction hooks (begin/commit) emit real T-SQL BEGIN TRANSACTION / COMMIT TRANSACTION statements. When False (default and legacy), begin/commit are no-ops and each statement is auto-committed by the driver. This means earlier successful statements are not rolled back if a later statement fails. This behavior is intended to become the default in a future release.
+You may opt into the new behavior sooner by setting `flags.dbt_sqlserver_use_dbt_transactions` to `True` in `dbt_project.yml`.
+Visit https://docs.getdbt.com/reference/global-configs/behavior-changes for more information.
+[0m01:00:07.180064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'BehaviorChangeEvent', 'label': '9af98f4c-4d4c-42e4-af75-375f372e2769', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ED0834050>]}
+[0m01:00:07.180487 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m01:00:07.180788 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m01:00:07.181080 [debug] [MainThread]: On debug: select 1 as id
+[0m01:00:07.181341 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:00:07.209125 [debug] [MainThread]: sqlserver adapter: SQL execution raised DbtRuntimeError: Runtime Error
+  The pyodbc backend requires a SQL Server ODBC driver name in the `driver` profile field.
+[0m01:00:07.209544 [debug] [MainThread]: sqlserver adapter: Error running SQL: select 1 as id
+[0m01:00:07.209772 [debug] [MainThread]: sqlserver adapter: Rolling back transaction.
+[0m01:00:07.210094 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m01:00:07.210539 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m01:00:07.210880 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <B:\PORTIFOLIO\bus-tracking-pipeline\dbt_project.yml> not found
+
+[0m01:00:07.211233 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  The pyodbc backend requires a SQL Server ODBC driver name in the `driver` profile field.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m01:00:07.212641 [debug] [MainThread]: Command `dbt debug` failed at 01:00:07.212507 after 0.85 seconds
+[0m01:00:07.212981 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m01:00:07.213308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ED0542B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ED0543050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029ED066DD60>]}
+[0m01:00:07.213623 [debug] [MainThread]: Flushing usage events
+[0m01:00:08.085533 [debug] [MainThread]: An error was encountered while trying to flush usage events
